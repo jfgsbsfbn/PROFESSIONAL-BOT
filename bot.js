@@ -8,7 +8,7 @@ const moment = require('moment');
   client.on('ready', function(){
         client.user.setStatus("dnd");
         var ms = 60000 ;
-        var setGame = [`KINGS NEVER DIE ];
+        var setGame = [`$help `];
         var i = -1;
         var j = 0;
         setInterval(function (){
@@ -19,7 +19,7 @@ const moment = require('moment');
                 j = -1;
             }
             i = i+j;
-            client.user.setGame(setGame[i],``);
+            client.user.setGame(setGame[i],`https://www.instagram.com/Abood_naimat0/`);
         }, ms);60000
     
    });
