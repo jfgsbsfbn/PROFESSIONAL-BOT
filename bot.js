@@ -825,6 +825,12 @@ client.on('messageDelete', message => {
 });
 
 client.on('message', message => {
+    if(message.content === 'الشعار'){
+        message.channel.send('``! KND | للديسكورد`` ``Ӄᴎ∂⍣㦵 | للعبة`` ')
+    }
+});
+
+client.on('message', message => {
     if(message.content === 'باك'){
         message.channel.send(' ** :) وُلُِڪم ي قٌلُِبَي منوُرٍ آلُِڪلُِآن بَرٍجٍعٍتڪ   ** [user] ')
     }
