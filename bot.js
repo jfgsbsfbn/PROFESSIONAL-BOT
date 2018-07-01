@@ -826,7 +826,7 @@ client.on('messageDelete', message => {
 
 client.on('message', message => {
     if(message.content === 'باك'){
-        message.channel.send(' ** :) وُلُِڪم ي قٌلُِبَي منوُرٍ آلُِڪلُِآن بَرٍجٍعٍتڪ   **[user] ')
+        message.channel.send(' ** :) وُلُِڪم ي قٌلُِبَي منوُرٍ آلُِڪلُِآن بَرٍجٍعٍتڪ   ** [user] ')
     }
 });
 client.on('message', message => {
