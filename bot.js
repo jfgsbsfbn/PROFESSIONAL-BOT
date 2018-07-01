@@ -6,12 +6,26 @@ const fs = require('fs');
 const moment = require('moment');
 
 const Discord = require("discord.js");
-const client = new Discord.Client();
-client.on('ready', () => {
-  client.user.setGame(KINGS NEVER DIE  .,'https://www.twitch.tv/sytra_ayman%27);
-  console.log('---------------');
-  console.log(' Bot Is Online')
-  console.log('---------------')
+const bot = new Discord.Client();
+const fs = require("fs");// npm i fs
+const moment = require("moment");// npm i fs
+var prefix = '$';
+
+bot.on('ready', () => {
+console.log(|=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=|);
+console.log(|                                                       |);
+console.log(|                                                       |);
+console.log(|                                                       |);
+console.log(|                                                       |);
+console.log(|                       Hello                           |);
+console.log(|                                                       |);
+console.log(|                                                       |);
+console.log(|                                                       |);
+console.log(|                                                       |);
+console.log(|=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=|);
+    bot.user.setGame($help KINGS NEVER DIE , "http://twitch.tv/Streammingg%22)
+    bot.user.setStatus("dnd")
+
 });
 
 var Eris = require("eris");
