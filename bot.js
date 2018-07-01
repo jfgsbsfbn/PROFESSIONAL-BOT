@@ -5,28 +5,24 @@ const dateFormat = require('dateformat');
 const fs = require('fs');
 const moment = require('moment');
 
-const Discord = require("discord.js");
-const bot = new Discord.Client();
-const fs = require("fs");// npm i fs
-const moment = require("moment");// npm i fs
-var prefix = '$';
-
-bot.on('ready', () => {
-console.log(|=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=|);
-console.log(|                                                       |);
-console.log(|                                                       |);
-console.log(|                                                       |);
-console.log(|                                                       |);
-console.log(|                       Hello                           |);
-console.log(|                                                       |);
-console.log(|                                                       |);
-console.log(|                                                       |);
-console.log(|                                                       |);
-console.log(|=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=|);
-    bot.user.setGame($help KINGS NEVER DIE , "http://twitch.tv/Streammingg%22)
-    bot.user.setStatus("dnd")
-
-});
+  client.on('ready', function(){
+        client.user.setStatus("dnd");
+        var ms = 60000 ;
+        var setGame = [`$help/KINGS NEVER DIE, "http://twitch.tv/Streammingg%22 `];
+        var i = -1;
+        var j = 0;
+        setInterval(function (){
+            if( i == -1 ){
+                j = 1;
+            }
+            if( i == (setGame.length)-1 ){
+                j = -1;
+            }
+            i = i+j;
+            client.user.setGame(setGame[i],`https://www.instagram.com/Abood_naimat0/`);
+        }, ms);60000
+    
+   });
 
 var Eris = require("eris");
 let  ID = "459306277487771651";
