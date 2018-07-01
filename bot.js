@@ -826,8 +826,7 @@ client.on('messageDelete', message => {
 
 client.on('message', message => {
     if(message.content === 'باك'){
-        message.channel.send(' ** :) وُلُِڪم ي قٌلُِبَي منوُرٍ آلُِڪلُِآن بَرٍجٍعٍتڪ   **
-[user] ')
+        message.channel.send(' ** :) وُلُِڪم ي قٌلُِبَي منوُرٍ آلُِڪلُِآن بَرٍجٍعٍتڪ   **[user] ')
     }
 });
 client.on('message', message => {
@@ -840,15 +839,7 @@ client.on('message', message => {
         message.channel.send('وعڵيڪم ٱڵسڵٱم ورحمهہ ٱڵڵهہ وبرڪٱتهہ ')
     }
 });
-client.on('message', message => {
-    if(message.content === 'الشعار'){
-        message.channel.send('**__الشعآر في الديسكورد__:  **
-``! AG | آسمك``
-** __الشعآر في اللعبة__:**
-``! ᴬᴳ 🔰 | آسمك``
-[user]')
-    }
-});
+
 client.on('message', message => {
     if(message.content === 'برب'){
         message.channel.send('تُےـيّےـتُ تُےـرجَےـعَ بّےـٱلسًےـلٱمِےـة ♥')
