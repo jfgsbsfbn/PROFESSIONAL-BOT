@@ -70,6 +70,13 @@ BT.editChannel("459306277487771651", {name : "• WELCOME TO KND •🌹"})
 
 });
 
+client.on("guildMemberAdd", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(`وِلكےـمِےـ نٌےـوِرتُےـ ٱلسًےـيّےـرفُےـر يّےــٱ حًےـلوِ  ${member} `) 
+}).catch(console.error)
+
+});
+
  
 client.on('message',message =>{
     var prefix = "$";
