@@ -8,7 +8,7 @@ const moment = require('moment');
   client.on('ready', function(){
         client.user.setStatus("dnd");
         var ms = 60000 ;
-        var setGame = [`KINGS NEVER DIE ,,'https://www.twitch.tv/sytra_ayman%27`];
+        var setGame = [`KINGS NEVER DIE ];
         var i = -1;
         var j = 0;
         setInterval(function (){
