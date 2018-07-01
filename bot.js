@@ -251,19 +251,7 @@ client.on('message', message => {
   });
 
 
-client.on('message', msg =>{
-    let message=msg;
-    if(message.content.startsWith("bc")){
-        var args = message.content.split(' ').slice(1).join(' ');
-    msg.guild.members.forEach(m=>{
-        m.send(args.replace(/[user]/g,m)).catch();
-    if(message.attachments.first()){
-m.sendFile(message.attachments.first().url).catch();
-    }
-    })    ;
-    }
-});
-   
+
   client.on("message", async message => {
     if(!message.channel.guild) return;
     var prefix = "$";
@@ -546,6 +534,20 @@ if(message.content.startsWith(prefix + 'channel')) {
      
     });
      
+client.on('message', msg =>{
+    let message=msg;
+    if(message.content.startsWith("$bc")){
+        var args = message.content.split(' ').slice(1).join(' ');
+    msg.guild.members.forEach(m=>{
+        m.send(args.replace(/[user]/g,m)).catch();
+    if(message.attachments.first()){
+m.sendFile(message.attachments.first().url).catch();
+    }
+    })    ;
+    }
+});
+   
+
     client.on("message", message => {
         const prefix = "$"
                    
