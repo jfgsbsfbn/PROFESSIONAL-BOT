@@ -1,13 +1,18 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
+const { Client, Util } = require('discord.js');
+const dateFormat = require('dateformat');
+const fs = require('fs');
+const moment = require('moment');
+
+const Discord = require("discord.js");
+const client = new Discord.Client();
 client.on('ready', () => {
   client.user.setGame(KINGS NEVER DIE  .,'https://www.twitch.tv/sytra_ayman%27);
   console.log('---------------');
   console.log(' Bot Is Online')
   console.log('---------------')
 });
-
-
 
 var Eris = require("eris");
 let  ID = "459306277487771651";
