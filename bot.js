@@ -19,7 +19,7 @@ const moment = require('moment');
                 j = -1;
             }
             i = i+j;
-            client.user.setGame(setGame[i],`http://twitch.tv/Streammingg%22`);
+            client.user.setGame(setGame[i],``);
         }, ms);60000
     
    });
