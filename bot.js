@@ -8,7 +8,7 @@ const moment = require('moment');
   client.on('ready', function(){
         client.user.setStatus("dnd");
         var ms = 60000 ;
-        var setGame = [`$help `];
+        var setGame = [`KINGS  NEVER DIE `];
         var i = -1;
         var j = 0;
         setInterval(function (){
@@ -653,7 +653,6 @@ client.on('message', message => {
     message.channel.send({ embed: embed });
             }
   });
-
 
   client.on("message", message => {
     var prefix = "$";
