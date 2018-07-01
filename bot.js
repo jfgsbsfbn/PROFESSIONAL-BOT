@@ -832,7 +832,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if(message.content === 'باك'){
-        message.channel.send(' ** :) وُلُِڪم ي قٌلُِبَي منوُرٍ آلُِڪلُِآن بَرٍجٍعٍتڪ   ** [user] ')
+        message.channel.send(' ** :) وُلُِڪم ي قٌلُِبَي منوُرٍ آلُِڪلُِآن بَرٍجٍعٍتڪ   **  ')
     }
 });
 client.on('message', message => {
