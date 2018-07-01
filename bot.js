@@ -896,7 +896,7 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if(message.content === '!'){
-        message.channel.send('```**#Welcome To AG Clan 🌺 🍻**```')
+        message.channel.send('```**#Welcome To KND Clan 🌺 🍻**```')
     }
 });
 client.on('message', message => {
