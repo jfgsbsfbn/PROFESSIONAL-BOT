@@ -8,7 +8,7 @@ const moment = require('moment');
   client.on('ready', function(){
         client.user.setStatus("dnd");
         var ms = 60000 ;
-        var setGame = [`KINGS NEVER DIE  `];
+        var setGame = [`BE CLAN `];
         var i = -1;
         var j = 0;
         setInterval(function (){
@@ -24,51 +24,6 @@ const moment = require('moment');
     
    });
 
-var Eris = require("eris");
-let  ID = "459306277487771651";
-const BT  = new Eris(process.env.BOT_TOKEN);
-BT.connect(process.env.BOT_TOKEN)
-BT.on("ready", ready => {
-setInterval(function(){
-
-            let currentTime = new Date(),
-            hours = currentTime.getHours() + 2 ,
-            minutes = currentTime.getMinutes(),
-            seconds = currentTime.getSeconds(),
-            years = currentTime.getFullYear(),
-            month = currentTime.getMonth() + 1,
-            day = currentTime.getDate(),
-            week = currentTime.getDay();
-
-
-
-            if (minutes < 10) {
-                minutes = "0" + minutes;
-            }
-            var suffix = "AM";
-            if (hours >= 12) {
-                suffix = "PM";
-                hours = hours - 12;
-            }
-            if (hours == 0) {
-                hours = 12;
-            }
-BT.editChannel("459306277487771651", {name : "•WEL"})
-BT.editChannel("459306277487771651", {name : "•WELC"})
-BT.editChannel("459306277487771651", {name : "•WELCO"})
-BT.editChannel("459306277487771651", {name : "•WELCOM"})
-BT.editChannel("459306277487771651", {name : "•WELCOME"})
-BT.editChannel("459306277487771651", {name : "•WELCOME T"})
-BT.editChannel("459306277487771651", {name : "•WELCOME TO"})
-BT.editChannel("459306277487771651", {name : "•WELCOME TO K"})
-BT.editChannel("459306277487771651", {name : "•WELCOME TO KN"})
-BT.editChannel("459306277487771651", {name : "• WELCOME TO KND •🌹"})
-
-
-
-}, 5000);
-
-});
 
 client.on("guildMemberAdd", member => {
   member.createDM().then(function (channel) {
@@ -548,7 +503,7 @@ if(message.content.startsWith(prefix + 'bc')) {
 if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
 if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**هذة الأمر للأدارة فقط**').then(m => m.delete(5000));
 let args = message.content.split(" ").join(" ").slice(2 + prefix.length);
-let copy = "KND CLAN";
+let copy = "BE CLAN";
 let request = `Requested By ${message.author.username}`;
 if (!args) return message.reply('**يجب عليك كتابة كلمة او جملة لإرسال البرودكاست**');message.channel.send(`**هل أنت متأكد من إرسالك البرودكاست؟ \nمحتوى البرودكاست:** \` ${args}\``).then(msg => {
 msg.react('✅')
@@ -890,39 +845,7 @@ client.on('messageDelete', message => {
 
 });
 
-client.on('message', message => {
-    if(message.content === 'الشعار'){
-        message.channel.send('``! KND | للديسكورد`` ``Ӄᴎ∂⍣㦵 | للعبة`` ')
-    }
-});
-
-client.on('message', message => {
-    if(message.content === 'باك'){
-        message.channel.send(' ** :) وُلُِڪم ي قٌلُِبَي منوُرٍ آلُِڪلُِآن بَرٍجٍعٍتڪ   **  ')
-    }
-});
-client.on('message', message => {
-    if(message.content === '!'){
-        message.channel.send('```**#Welcome To KND Clan 🌺 🍻**```')
-    }
-});
-client.on('message', message => {
-    if(message.content === 'السلام عليكم'){
-        message.channel.send('وعڵيڪم ٱڵسڵٱم ورحمهہ ٱڵڵهہ وبرڪٱتهہ ')
-    }
-});
-
-client.on('message', message => {
-    if(message.content === 'برب'){
-        message.channel.send('تُےـيّےـتُ تُےـرجَےـعَ بّےـٱلسًےـلٱمِےـة ♥')
-    }
-});
- client.on('message', message => {
-    if(message.content === 'fh;'){
-        message.channel.send('تـقـصـد بـاك ؟ ههه 😂😂 ')
-    }
-});           
-                
+        
 
               
                 
